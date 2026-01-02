@@ -1,0 +1,6 @@
+data/
+features/
+__pycache__/
+*.zip
+query.jpg
+venv/
