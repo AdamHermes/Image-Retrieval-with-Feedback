@@ -1,14 +1,14 @@
 To run the code follow the below instructions:
 
 Place the data folder inside the root folder 
-
+```
 source code/
 │
 ├── README.md
 ├── requirements.txt
 ├── .gitignore│
 ├── data/
-
+```
 Setting up environment
 ```
 python -m venv venv
