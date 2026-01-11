@@ -15,14 +15,15 @@ python -m venv venv
 
 .\venv\Scripts\Activate
 ```
-If the features folder not in source code then:
-```
-python extract_features.py
-```
+
 Install dependencies
 
 ```
 pip install -r requirements.txt
+```
+If the features folder not in source code then:
+```
+python extract_features.py
 ```
 
 Run the app
