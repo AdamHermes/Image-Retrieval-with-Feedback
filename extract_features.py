@@ -9,7 +9,7 @@ from clip_encoder import CLIPEncoder
 # =========================
 IMAGE_ROOT = "data/img"
 OUT_DIR = "features"
-IMAGE_SUFFIX = "_front.jpg"   # change to ".jpg" if you want all views
+IMAGE_SUFFIX = ["_front.jpg","_back.jpg","_flat.jpg"]   # change to ".jpg" if you want all views
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -26,9 +26,10 @@ embeddings = []
 # =========================
 for root, _, files in os.walk(IMAGE_ROOT):
     for file in files:
-        if file.lower().endswith(IMAGE_SUFFIX):
-            full_path = os.path.join(root, file)
-            image_paths.append(full_path)
+        for suffix in IMAGE_SUFFIX:
+            if file.lower().endswith(suffix):
+                full_path = os.path.join(root, file)
+                image_paths.append(full_path)
 
 print(f"[INFO] Found {len(image_paths)} images")
 
