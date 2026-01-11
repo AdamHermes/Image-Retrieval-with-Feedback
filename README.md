@@ -2,8 +2,10 @@ To run the code follow the below instructions:
 
 Setting up environment
 ```
-cd Image Retrieval with Feedback
+cd "Image Retrieval with Feedback"
+
 python -m venv venv
+
 .\venv\Scripts\Activate
 ```
 
